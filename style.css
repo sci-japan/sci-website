@@ -176,3 +176,55 @@ a.card:hover,a.wcard:hover{border-color:var(--red);box-shadow:0 4px 14px rgba(0,
   .wgrid{grid-template-columns:1fr 1fr;}
   .sblock{padding:26px 24px;}
 }
+
+/* vision hero */
+.vision{background:linear-gradient(160deg,#fff 38%,var(--peach));padding:52px 0 46px;border-bottom:1px solid var(--line);}
+.vision .eb{color:var(--red);font-size:.7rem;letter-spacing:.18em;font-weight:700;}
+.vision h1{font-size:1.6rem;font-weight:800;line-height:1.55;margin-top:8px;}
+.vision h1 em{color:var(--red);font-style:normal;}
+.vision p{margin-top:16px;color:var(--grey);font-size:.95rem;}
+
+/* future scene */
+.scene{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 20px;margin-bottom:12px;}
+.scene .who2{font-size:.68rem;font-weight:800;color:var(--red);letter-spacing:.1em;}
+.scene p{font-size:.95rem;margin-top:6px;line-height:1.85;}
+
+/* journey */
+.journey{margin-top:8px;}
+.jstep{position:relative;padding-left:30px;padding-bottom:24px;border-left:2px solid var(--peach);}
+.jstep:last-child{border-left-color:transparent;padding-bottom:0;}
+.jdot{position:absolute;left:-9px;top:2px;width:16px;height:16px;border-radius:50%;background:var(--red);border:3px solid #fff;box-shadow:0 0 0 2px var(--peach);}
+.jlabel{font-size:.68rem;font-weight:800;color:var(--red);letter-spacing:.12em;}
+.jtext{font-size:.95rem;font-weight:700;margin-top:4px;line-height:1.7;}
+.jsub{font-size:.84rem;color:var(--grey);margin-top:4px;}
+
+/* CTA list */
+.ctalist{display:grid;gap:8px;grid-template-columns:1fr;margin-top:8px;}
+.ctalist a{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;text-decoration:none;color:var(--dark);font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:.15s;}
+.ctalist a:hover{border-color:var(--red);box-shadow:0 4px 14px rgba(0,0,0,.06);}
+.ctalist a em{font-style:normal;color:var(--red);flex:0 0 auto;}
+
+/* context (why now) */
+.ctx{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;}
+.ctx dl{margin:0;}
+.ctx dt{font-weight:800;font-size:.88rem;color:var(--dark);margin-top:14px;}
+.ctx dt:first-child{margin-top:0;}
+.ctx dd{margin:4px 0 0;font-size:.83rem;color:var(--grey);line-height:1.75;}
+
+/* Theory of Change diagram */
+.tochint{font-size:.75rem;color:var(--grey);margin-bottom:10px;}
+.tocwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px;}
+.tocflow{display:grid;grid-template-columns:repeat(7,minmax(148px,1fr));gap:8px;min-width:1080px;align-items:start;}
+.tcol .th{background:var(--red);color:#fff;font-size:.68rem;font-weight:800;text-align:center;padding:9px 6px;border-radius:6px;margin-bottom:8px;line-height:1.4;}
+.tcell{background:#fff;border:1px solid var(--line);border-radius:6px;padding:9px 10px;font-size:.72rem;line-height:1.6;margin-bottom:6px;color:var(--dark);}
+.tcol.vis .th{background:#B01E1D;}
+.tcol.vis .tcell{background:var(--peach);border-color:var(--peach);font-weight:700;}
+.tband{background:var(--dark);color:#fff;font-size:.7rem;font-weight:700;text-align:center;padding:8px;border-radius:6px;margin-top:8px;}
+
+@media(min-width:700px){
+  .vision h1{font-size:2.1rem;}
+  .vision{padding:76px 0 64px;}
+  .vision p{max-width:660px;font-size:1rem;}
+  .ctalist{grid-template-columns:1fr 1fr;}
+  .scene{padding:26px 24px;}
+}
