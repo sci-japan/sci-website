@@ -2,131 +2,355 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>スポーツコーチング・イニシアチブ｜スポーツで人を育み、ともに未来をつくる</title>
+<title>特定非営利活動法人 スポーツコーチング・イニシアチブ｜スポーツで人を育み、ともに未来をつくる</title>
+<meta name="description" content="私たちは「ダブル・ゴール・コーチング™」の理念を導入・普及することで、勝利と人間的成長の両立をめざします。指導者・選手・保護者とともに、スポーツをよりポジティブで価値あるものとし、教育や文化の発展に貢献します。">
 <style>
-:root{--red:#E62726;--dark:#3F3F3F;--grey:#595959;--peach:#FBE9E3;--light:#F7F7F7;}
+:root{--red:#E62726;--dark:#3F3F3F;--grey:#595959;--peach:#FBE9E3;--light:#F7F7F7;--line:#E5E5E5;}
 *{margin:0;padding:0;box-sizing:border-box;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;}
-body{color:var(--dark);line-height:1.8;}
+html{scroll-behavior:smooth;}
+body{color:var(--dark);line-height:1.85;font-size:16px;}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10;}
-.nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
-.logo{font-weight:800;font-size:1.05rem;}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eee;z-index:50;}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px;}
+.logo{font-weight:800;font-size:.98rem;line-height:1.4;}
+.logo small{display:block;font-weight:600;font-size:.68rem;color:var(--grey);letter-spacing:.04em;}
 .logo span{color:var(--red);}
-nav a{margin-left:22px;text-decoration:none;color:var(--dark);font-size:.92rem;}
+nav a{margin-left:20px;text-decoration:none;color:var(--dark);font-size:.9rem;white-space:nowrap;}
+nav a:hover{color:var(--red);}
 .cta{background:var(--red);color:#fff !important;padding:9px 18px;border-radius:6px;font-weight:700;}
-.hero{background:linear-gradient(135deg,#fff 55%,var(--peach));padding:88px 0 72px;}
-.hero h1{font-size:2.5rem;font-weight:800;line-height:1.4;}
+.hero{background:linear-gradient(135deg,#fff 52%,var(--peach));padding:96px 0 84px;}
+.hero .eyebrow{color:var(--red);font-weight:700;letter-spacing:.18em;font-size:.8rem;margin-bottom:16px;}
+.hero h1{font-size:2.7rem;font-weight:800;line-height:1.4;letter-spacing:.01em;}
 .hero h1 em{color:var(--red);font-style:normal;}
-.hero p{margin-top:18px;color:var(--grey);max-width:620px;}
-.hero .btns{margin-top:28px;}
-.hero .btns a{display:inline-block;margin-right:12px;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:700;}
-.b1{background:var(--red);color:#fff;}.b2{border:2px solid var(--red);color:var(--red);}
-section{padding:64px 0;}
-h2{font-size:1.6rem;font-weight:800;margin-bottom:8px;}
-h2 span{color:var(--red);display:block;font-size:.85rem;letter-spacing:.15em;}
-.sub{color:var(--grey);margin-bottom:32px;}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.stat{background:var(--light);border-radius:10px;padding:26px;text-align:center;}
-.stat b{display:block;font-size:2.2rem;color:var(--red);}
-.stat small{color:var(--grey);}
-.gates{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.gate{border:1px solid #e5e5e5;border-radius:10px;padding:28px;transition:.2s;}
-.gate:hover{box-shadow:0 6px 18px rgba(0,0,0,.08);}
-.gate h3{color:var(--red);margin-bottom:10px;font-size:1.15rem;}
-.gate p{font-size:.92rem;color:var(--grey);}
-.gate a{display:inline-block;margin-top:14px;color:var(--red);font-weight:700;text-decoration:none;}
+.hero p{margin-top:22px;color:var(--grey);max-width:680px;font-size:1.02rem;}
+.hero .btns{margin-top:32px;}
+.hero .btns a{display:inline-block;margin:0 12px 10px 0;padding:13px 28px;border-radius:6px;text-decoration:none;font-weight:700;}
+.b1{background:var(--red);color:#fff;}
+.b2{border:2px solid var(--red);color:var(--red);}
+section{padding:76px 0;}
 .bg-l{background:var(--light);}
-.results{display:flex;flex-wrap:wrap;gap:12px;}
-.chip{background:#fff;border:1px solid #e2e2e2;border-radius:999px;padding:8px 20px;font-size:.9rem;}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center;}
-.step{background:#fff;border-radius:10px;padding:30px 22px;border:1px solid #eee;}
-.step b{display:block;font-size:1.5rem;color:var(--red);margin-bottom:8px;}
-.news li{list-style:none;border-bottom:1px solid #eee;padding:14px 0;display:flex;gap:18px;}
-.news time{color:var(--grey);font-size:.85rem;white-space:nowrap;}
-footer{background:var(--dark);color:#eee;padding:56px 0 32px;}
+h2{font-size:1.65rem;font-weight:800;margin-bottom:10px;line-height:1.5;}
+h2 span{color:var(--red);display:block;font-size:.78rem;letter-spacing:.18em;margin-bottom:6px;}
+.sub{color:var(--grey);margin-bottom:38px;max-width:840px;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 24px;text-align:center;}
+.bg-l .stat{background:#fff;}
+.stat b{display:block;font-size:2.3rem;color:var(--red);line-height:1.2;}
+.stat strong{display:block;font-size:.95rem;margin:6px 0 10px;}
+.stat small{color:var(--grey);font-size:.8rem;line-height:1.7;display:block;}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px;}
+.pr{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 24px;}
+.pr .tag{display:inline-block;background:var(--peach);color:var(--red);font-weight:800;font-size:.72rem;letter-spacing:.12em;padding:4px 12px;border-radius:999px;margin-bottom:14px;}
+.pr h3{font-size:1.22rem;color:var(--red);margin-bottom:6px;}
+.pr .en{font-size:.75rem;color:var(--grey);letter-spacing:.1em;margin-bottom:12px;}
+.pr ul{list-style:none;}
+.pr li{font-size:.9rem;color:var(--grey);padding-left:16px;position:relative;margin-bottom:4px;}
+.pr li:before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--red);}
+.biz{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.bz{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 22px;}
+.bz h3{font-size:1.02rem;color:var(--red);margin-bottom:10px;line-height:1.5;}
+.bz p{font-size:.86rem;color:var(--grey);}
+.bz .ex{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:.78rem;color:var(--grey);}
+.bz .ex b{display:block;color:var(--dark);font-size:.78rem;margin-bottom:4px;}
+.gates{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.gate{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 26px;transition:.2s;}
+.gate:hover{box-shadow:0 8px 22px rgba(0,0,0,.07);transform:translateY(-2px);}
+.gate h3{color:var(--red);margin-bottom:12px;font-size:1.15rem;}
+.gate p{font-size:.92rem;color:var(--grey);}
+.gate a{display:inline-block;margin-top:16px;color:var(--red);font-weight:700;text-decoration:none;font-size:.92rem;}
+.results{display:flex;flex-wrap:wrap;gap:11px;}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 20px;font-size:.88rem;}
+.bg-l .chip{background:#fff;}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px 26px;}
+.step .n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;margin-bottom:14px;}
+.step h3{font-size:1.3rem;color:var(--red);margin-bottom:2px;}
+.step .en{font-size:.7rem;color:var(--grey);letter-spacing:.16em;margin-bottom:12px;}
+.step p{font-size:.9rem;color:var(--grey);}
+.loop{margin-top:26px;text-align:center;font-weight:700;color:var(--red);}
+.toc-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px;}
+.tf{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:8px;padding:22px 20px;}
+.tf b{display:block;font-size:.72rem;color:var(--red);letter-spacing:.1em;margin-bottom:8px;}
+.tf p{font-size:.88rem;color:var(--grey);}
+.members{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.mb{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 18px;}
+.mb .role{font-size:.7rem;color:var(--red);font-weight:800;letter-spacing:.08em;margin-bottom:6px;}
+.mb .name{font-weight:800;font-size:1rem;}
+.mb .kana{font-size:.72rem;color:var(--grey);margin-bottom:8px;}
+.mb .sport{font-size:.78rem;color:var(--grey);}
+.news li{list-style:none;border-bottom:1px solid #eee;padding:16px 0;display:flex;gap:20px;align-items:baseline;}
+.news time{color:var(--grey);font-size:.84rem;white-space:nowrap;}
+.news a{color:var(--dark);text-decoration:none;}
+.news a:hover{color:var(--red);}
+.media{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.md{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 22px;}
+.md h3{font-size:1.02rem;color:var(--red);margin-bottom:8px;}
+.md p{font-size:.86rem;color:var(--grey);}
+.md a{display:inline-block;margin-top:12px;color:var(--red);font-weight:700;text-decoration:none;font-size:.86rem;}
+footer{background:var(--dark);color:#eee;padding:64px 0 34px;}
 footer h2{color:#fff;}
-.fform{display:grid;gap:12px;max-width:560px;margin-top:18px;}
-.fform input,.fform textarea{padding:12px;border-radius:6px;border:none;font-size:1rem;}
-.fform button{background:var(--red);color:#fff;border:none;padding:14px;border-radius:6px;font-weight:700;font-size:1rem;cursor:pointer;}
-.copy{text-align:center;color:#aaa;font-size:.8rem;margin-top:40px;}
-.mock{position:fixed;bottom:14px;right:14px;background:#333;color:#fff;font-size:.75rem;padding:6px 12px;border-radius:6px;opacity:.85;}
+footer h2 span{color:var(--peach);}
+footer p{color:#ccc;}
+.contact-box{background:rgba(255,255,255,.07);border-radius:10px;padding:30px;margin-top:24px;max-width:520px;}
+.contact-box .label{font-size:.78rem;color:#bbb;letter-spacing:.1em;margin-bottom:8px;}
+.contact-box a{color:#fff;font-size:1.35rem;font-weight:800;text-decoration:none;}
+.fsns{margin-top:30px;display:flex;gap:18px;flex-wrap:wrap;}
+.fsns a{color:#ddd;text-decoration:none;font-size:.88rem;border:1px solid #666;padding:7px 16px;border-radius:999px;}
+.fsns a:hover{border-color:#fff;color:#fff;}
+.copy{text-align:center;color:#999;font-size:.78rem;margin-top:44px;}
+.note{font-size:.76rem;color:var(--grey);margin-top:16px;line-height:1.7;}
+.mock{position:fixed;bottom:14px;right:14px;background:#333;color:#fff;font-size:.72rem;padding:6px 13px;border-radius:6px;opacity:.85;z-index:99;}
+@media(max-width:900px){
+  nav{display:none;}
+  .hero h1{font-size:1.9rem;}
+  .stats,.principles,.gates,.steps,.media{grid-template-columns:1fr;}
+  .biz,.toc-flow,.members{grid-template-columns:repeat(2,1fr);}
+}
 </style>
 </head>
 <body>
+
 <header><div class="wrap nav">
-  <div class="logo">特定非営利活動法人 <span>スポーツコーチング・イニシアチブ</span></div>
-  <nav><a href="#about">私たちについて</a><a href="#gates">支援・参加</a><a href="#results">実績</a><a href="#news">発信</a><a class="cta" href="#contact">相談する</a></nav>
+  <div class="logo">特定非営利活動法人 <span>スポーツコーチング・イニシアチブ</span>
+    <small>SPORTS COACHING INITIATIVE</small></div>
+  <nav>
+    <a href="#purpose">パーパス</a>
+    <a href="#issue">課題</a>
+    <a href="#dgc">ダブル・ゴール</a>
+    <a href="#biz">活動領域</a>
+    <a href="#works">実績</a>
+    <a href="#members">メンバー</a>
+    <a class="cta" href="#contact">お問い合わせ</a>
+  </nav>
 </div></header>
 
-<div class="hero"><div class="wrap">
+<div class="hero" id="purpose"><div class="wrap">
+  <div class="eyebrow">OUR PURPOSE</div>
   <h1>スポーツで<em>人を育み</em>、<br>ともに未来をつくる。</h1>
-  <p>私たちは「ダブル・ゴール・コーチング™」を軸に、勝利と人間的成長の両立をめざす学びのプラットフォームです。自治体・指導者・保護者とともに、日本のユーススポーツを変えていきます。</p>
-  <div class="btns"><a class="b1" href="#gates">自治体の方はこちら</a><a class="b2" href="#gates">指導者の方はこちら</a></div>
+  <p>スポーツは本来楽しいものであり、子どもたちを人間的に成長させ、未来を明るく照らす力があります。しかしながら、日本のユーススポーツには依然として勝利至上主義が根強く残り、指導者による言葉の暴力やハラスメントは後を絶ちません。私たちは、この課題を解決するために「ダブル・ゴール・コーチング™」の理念を導入・普及することで、指導者や選手、保護者のみなさまとともに、スポーツをよりポジティブで価値あるものとし、教育や文化の発展に貢献します。</p>
+  <div class="btns">
+    <a class="b1" href="#gates">自治体・団体の方はこちら</a>
+    <a class="b2" href="#gates">指導者・保護者の方はこちら</a>
+  </div>
 </div></div>
 
-<section id="about"><div class="wrap">
-  <h2><span>ISSUE</span>日本のユーススポーツのいま</h2>
-  <p class="sub">部活動の地域展開が本格化する一方、現場には課題が山積しています。</p>
+<section id="issue"><div class="wrap">
+  <h2><span>ISSUE 01</span>夢を見ない子ども、学ぶ意欲のない大人</h2>
+  <p class="sub">日本財団の調査によると、日本の若者は諸外国の同世代と比較して、自分の国の将来や自分自身の可能性について悲観的であることが分かっています。また経済産業省『未来人材ビジョン』では、日本の大人たちの仕事に対する意欲や、企業の人材育成投資、自発的に学習を行っている大人の割合も非常に低いことが指摘されています。このような社会課題が生まれる背景の一つとして、私たちは日本の社会における「人を育てる」あり方に着目しています。</p>
   <div class="stats">
-    <div class="stat"><b>54%</b><small>休日部活動の地域連携・移行率（2025年度見込み・スポーツ庁）</small></div>
-    <div class="stat"><b>536件</b><small>暴力・暴言等の相談件数。過去最多を更新（日本スポーツ協会 2024年度）</small></div>
-    <div class="stat"><b>15.6%</b><small>「自国の将来は良くなる」と答えた日本の18歳（日本財団 2026・6カ国中最下位）</small></div>
+    <div class="stat"><b>6カ国中<br>最下位</b><strong>自国の将来への期待</strong><small>「自分の国の将来は良くなる」と考える18歳の割合が、調査対象6カ国の中で最も低い水準<br>日本財団『18歳意識調査 第78回』（2026年4月）</small></div>
+    <div class="stat"><b>低水準</b><strong>大人の学習意欲・人材投資</strong><small>社外学習・自己啓発を行っていない人の割合、企業の人材育成投資の水準がいずれも国際的に低位<br>経済産業省『未来人材ビジョン』（令和4年5月）</small></div>
+    <div class="stat"><b>64.1%</b><strong>中学生男子の運動部加入率</strong><small>女子は49.8％。多くの青少年が成長期の貴重な時間をスポーツ活動に費やしている<br>笹川スポーツ財団『子ども・青少年のスポーツライフ・データ2023』</small></div>
+  </div>
+  <p class="note">※ 運動部活動に加入している生徒にとっては、各教科にかける時間よりも部活動に費やす時間のほうが圧倒的に多く、そこでの過ごし方は教育面でも大きな影響を与えます。それを支えるのは学校教員をはじめとした大人たちであり、特に青少年スポーツにおける指導者の考え方や言葉、ふるまいは、選手たちの現在はもちろん、将来に対しても大きな影響を与えます。</p>
+</div></section>
+
+<section class="bg-l"><div class="wrap">
+  <h2><span>ISSUE 02</span>日本のスポーツ現場における課題</h2>
+  <p class="sub">日本のスポーツ指導現場に目を向けると、いまだに旧態依然とした指導が根強く残り、勝利至上主義に基づく体罰や暴言・ハラスメント、部員同士のいじめといった問題が多く発生しています。2020年には国際人権団体 Human Rights Watch が日本のスポーツ現場における体罰に焦点を当てたレポート『数えきれないほど叩かれて』を発行しましたが、抜本的な解決は図られていません。</p>
+  <div class="stats">
+    <div class="stat"><b>536件</b><strong>暴力・暴言等の相談件数</strong><small>日本スポーツ協会の相談窓口への相談件数は年々増加し、2024年度は過去最多を更新（2023年度485件）<br>※窓口周知の効果等も含むため参考値</small></div>
+    <div class="stat"><b>構造の問題</b><strong>指導者個人だけの問題ではない</strong><small>集団の利益、自治体・競技団体のガバナンス、ハラスメントを許容する文化。問題を生み出す構造の理解と総合的なアプローチが必要</small></div>
+    <div class="stat"><b>2026〜<br>2032</b><strong>部活動改革の実行期間</strong><small>文部科学省は令和7年12月に新ガイドラインを策定。令和8年度から「改革実行期間」（前期2026〜2029／後期2030〜2032）へ移行し、「地域移行」は「地域展開」に名称変更</small></div>
+  </div>
+  <p class="note">教員の働き方改革を起点とする部活動改革は好機ですが、地域スポーツを支える指導者の質・量の不足には拍車がかかっており、日本の人材育成の一端を担ってきた青少年スポーツは、変革の必要性に迫られています。</p>
+</div></section>
+
+<section id="dgc"><div class="wrap">
+  <h2><span>OUR APPROACH</span>ダブル・ゴール・コーチング™とは</h2>
+  <p class="sub">このような状況を打破するためのヒントとして、私たちは米国NPO法人 Positive Coaching Alliance が提唱する「ダブル・ゴール・コーチング™」に注目し、その普及啓発活動を行っています。「勝利」と「人間的成長」の両立（ダブル・ゴール）を図るために、指導者および選手、保護者のメンタルモデルを変革することで、スポーツの現場を真の意味で「人を育てる活動」へと転換していくことを目指しています。</p>
+  <div class="principles">
+    <div class="pr">
+      <span class="tag">PRINCIPLE 1</span>
+      <h3>ELM</h3>
+      <div class="en">成長し続ける人・チームになるための</div>
+      <ul>
+        <li><b>E</b>ffort ／ 努力を重視する</li>
+        <li><b>L</b>earning ／ 学習を重視する</li>
+        <li><b>M</b>istakes ／ 失敗してもOK</li>
+      </ul>
+    </div>
+    <div class="pr">
+      <span class="tag">PRINCIPLE 2</span>
+      <h3>感情タンク</h3>
+      <div class="en">EMOTIONAL TANK</div>
+      <ul>
+        <li>選手・子どもの意欲につながる、心のエネルギーを満たす関わり方</li>
+        <li>批判ではなく、承認と励ましによってタンクを満たす</li>
+      </ul>
+    </div>
+    <div class="pr">
+      <span class="tag">PRINCIPLE 3</span>
+      <h3>ROOTS</h3>
+      <div class="en">尊重する関わり方のポイント</div>
+      <ul>
+        <li><b>R</b>ule ／ ルール</li>
+        <li><b>O</b>pponents ／ 対戦相手</li>
+        <li><b>O</b>fficials ／ 審判</li>
+        <li><b>T</b>eammates ／ チームメイト</li>
+        <li><b>S</b>elf ／ 自分自身</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">「『競争』と『勝ちたいという欲求』自体は問題ではないが、それらが『勝利がすべてである』という考え方に落とし込まれてしまうと、大きな問題となるのである」——『ダブル・ゴール・コーチ』（ジム・トンプソン著、東洋館出版）より</p>
+</div></section>
+
+<section class="bg-l" id="biz"><div class="wrap">
+  <h2><span>WHAT WE DO</span>私たちの活動領域</h2>
+  <p class="sub">私たちの活動は、大きく「指導者研修（受託）事業」「アカデミー事業」「イベント企画・運営」「アドボカシー（普及啓発）活動」から構成されています。スポーツ指導者に対する直接的なアプローチはもちろん、選手やその保護者、活動を支える競技団体や自治体、企業など、幅広いステークホルダーの皆様と共に、新しいスポーツ活動の在り方を創造していきます。</p>
+  <div class="biz">
+    <div class="bz">
+      <h3>指導者研修<br>（受託）事業</h3>
+      <p>自治体や教育機関、競技団体、チーム等を対象に、それぞれの課題に合わせて、指導者向けの研修会や、コーチングの伴走支援、団体職員や保護者、選手等を対象としたワークショップの開催など、オリジナルプログラムを共創・開発します。</p>
+    </div>
+    <div class="bz">
+      <h3>アカデミー事業</h3>
+      <p>ダブル・ゴール・コーチング™に関する学びを深めたい指導者や保護者を対象に、オンライン／オフラインでのセミナーやワークショップ、キャンプ形式での学びの場を提供しています。</p>
+      <div class="ex">
+        <b>開催プログラム</b>
+        セッション（原則毎週開催・90分）／カレッジ（全5回・120分のDGC習得プログラム）／キャンプ（1泊2日の合宿形式）
+      </div>
+    </div>
+    <div class="bz">
+      <h3>イベント企画・運営</h3>
+      <p>ダブル・ゴール・コーチング™の理念に賛同するチーム、競技団体を対象に、子どもたち向けのスポーツ体験教室や、指導者・選手だけでなく保護者も楽しめるリーグ戦形式での大会運営などを行っています。</p>
+      <div class="ex">
+        <b>主な実績</b>
+        栃木さくらカップ（女子野球大会）／SETAGAYA SIXES ダブル・ゴール・リーグ™
+      </div>
+    </div>
+    <div class="bz">
+      <h3>アドボカシー<br>（普及啓発）活動</h3>
+      <p>ダブル・ゴール・コーチング™の理念を普及させるため、関連本の出版やメディア等を通じた発信、政策提言などを行っています。</p>
+      <div class="ex">
+        <b>主な実績</b>
+        『ダブル・ゴール・コーチングの持つパワー』出版／『ダブル・ゴール・コーチ』出版協力／メディア『コーチング・ステーション』運営
+      </div>
+    </div>
   </div>
 </div></section>
 
-<section class="bg-l" id="gates"><div class="wrap">
+<section id="gates"><div class="wrap">
   <h2><span>FOR YOU</span>3つの入口</h2>
-  <p class="sub">立場に合わせて、私たちができることをご案内します。</p>
+  <p class="sub">お立場に合わせて、私たちができることをご案内します。</p>
   <div class="gates">
-    <div class="gate"><h3>自治体・教育委員会の方へ</h3><p>部活動の地域展開に、哲学と実務の両面から伴走します。北海道安平町での実践モデルをベースに、貴自治体に合った設計をご一緒します。</p><a href="#contact">相談する →</a></div>
-    <div class="gate"><h3>指導者の方へ</h3><p>「まなぶ・はなす・さがす」の学びの場（月1回のラボ、コーチング診断SCCOT、ワークショッパー養成）で、あなたの指導をアップデート。</p><a href="#contact">学びの場を見る →</a></div>
-    <div class="gate"><h3>企業・財団の方へ</h3><p>Theory of Changeに基づく事業設計と実績報告で、支援の成果を可視化します。協賛・助成・共催のご相談を歓迎します。</p><a href="#contact">協働の相談 →</a></div>
+    <div class="gate"><h3>自治体・教育委員会の方へ</h3><p>部活動の地域展開に、哲学と実務の両面から伴走します。北海道安平町をはじめとする実践モデルをベースに、貴自治体の実情に合った設計をご一緒します。指導者向け研修から仕組みづくりまで対応します。</p><a href="#contact">相談する →</a></div>
+    <div class="gate"><h3>指導者・保護者の方へ</h3><p>「まなぶ・はなす・さがす」の学びの場をご用意しています。毎週開催のセッション、全5回のカレッジ、合宿形式のキャンプを通じて、あなたの指導をアップデートします。</p><a href="#ourway">学びの場を見る →</a></div>
+    <div class="gate"><h3>企業・財団の方へ</h3><p>Theory of Changeに基づく事業設計と実績報告で、ご支援の成果を可視化します。協賛・助成・共催のご相談を歓迎します。スポーツを通じた社会課題解決にともに取り組みませんか。</p><a href="#contact">協働の相談 →</a></div>
   </div>
 </div></section>
 
-<section id="results"><div class="wrap">
+<section class="bg-l" id="works"><div class="wrap">
   <h2><span>WORKS</span>主な実績</h2>
-  <p class="sub">プロ球団から小さな町まで、現場とともに歩んでいます。</p>
+  <p class="sub">大学のアスレチックデパートメントから小さな町のスポーツクラブまで、現場とともに歩んでいます。</p>
   <div class="results">
-    <span class="chip">読売ジャイアンツU15（指導者・保護者研修）</span>
-    <span class="chip">北海道安平町（地域展開モデル）</span>
-    <span class="chip">横浜市スポーツ協会（DGCカリキュラム採用）</span>
-    <span class="chip">北海道名寄市・旭川市</span>
-    <span class="chip">兵庫県尼崎市</span>
-    <span class="chip">筑波大学（SCCOT共同開発）</span>
+    <span class="chip">筑波大学アスレチックデパートメント</span>
     <span class="chip">プレイアカデミー with 大坂なおみ</span>
+    <span class="chip">アビースポーツクラブ（北海道安平町）</span>
+    <span class="chip">那須塩原市（栃木県）</span>
+    <span class="chip">鹿島市（佐賀県）</span>
+    <span class="chip">Nスポーツコミッション（北海道名寄市）</span>
+    <span class="chip">栃木さくらカップ（女子野球大会）</span>
+    <span class="chip">SETAGAYA SIXES ダブル・ゴール・リーグ™</span>
+    <span class="chip">世田谷マグピーズ</span>
+    <span class="chip">FCアビリスタ</span>
+  </div>
+  <p class="note">※ 上記は一例です。この他にも多数の自治体・競技団体・チームの皆様とご一緒しています。</p>
+</div></section>
+
+<section id="ourway"><div class="wrap">
+  <h2><span>OUR WAY</span>まなぶ・はなす・さがす</h2>
+  <p class="sub">私たちのワークショップは、「まなぶ・はなす・さがす」の3つのプロセスを循環させることを大切にしています。垂直的に答えを教えるのではなく、体験と対話を通じて、一人ひとりが自ら問いを立て、学び続けられる場をつくります。</p>
+  <div class="steps">
+    <div class="step">
+      <div class="n">1</div>
+      <h3>まなぶ</h3>
+      <div class="en">LEARN</div>
+      <p>ダブル・ゴール・コーチングの理念や、地域・競技・世代を越えた実践、スポーツに限らない他分野からの知見に触れ、新しい視点を得る。暗記ではなく、体験を通じて「気づく」。</p>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <h3>はなす</h3>
+      <div class="en">TALK</div>
+      <p>立場や競技を越えた仲間と対話し、自分の考えを言葉にする。多様な視点に触れながら、自らの置かれた環境に対する問いを深めていく。</p>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <h3>さがす</h3>
+      <div class="en">SEARCH</div>
+      <p>与えられた答えではなく、自ら問いを立て、現場で仮説検証をくり返しながら、自分なりの答えを探し続ける。</p>
+    </div>
+  </div>
+  <p class="loop">この3つをくり返し循環させることで、自ら問いを立て学び続ける指導者・人材を育てる</p>
+</div></section>
+
+<section class="bg-l"><div class="wrap">
+  <h2><span>THEORY OF CHANGE</span>私たちが描く変化の道筋</h2>
+  <p class="sub">社会を変革するためには、将来のあるべき姿（ビジョン）から、短期・中期・長期の目標（アウトカム）を設定し、有効な打ち手（アウトプット）を導き出す必要があります。私たちは、価値観を共有する人々とのつながりを基に、ダブル・ゴール・コーチング™を軸にした事業運営や普及啓発活動などを通じて、スポーツで人が育まれる未来を創造します。</p>
+  <div class="toc-flow">
+    <div class="tf"><b>アウトプット</b><p>指導者・自治体・保護者のマインドチェンジ、指導者同士のプラットフォーム形成、安全・安心なスポーツの場の確保</p></div>
+    <div class="tf"><b>短期アウトカム</b><p>指導者育成におけるダブル・ゴール・コーチングの必修化、体罰・ハラスメントの撲滅、ポジティブ・スポーツコミュニティの形成</p></div>
+    <div class="tf"><b>中期アウトカム</b><p>成長マインドセットを育む指導法の常識化、選手・指導者・保護者・チーム組織がビジョンを共有するカルチャー形成</p></div>
+    <div class="tf"><b>長期アウトカム</b><p>チャレンジ精神を身に着け自ら挑戦する子どもたちの増加、その挑戦を支援し後押しする大人たちの増加</p></div>
+  </div>
+  <p class="loop" style="margin-top:30px;font-size:1.1rem;">ビジョン：スポーツがよりポジティブで価値あるものとなり、教育や文化の発展に貢献する</p>
+</div></section>
+
+<section id="members"><div class="wrap">
+  <h2><span>MEMBERS</span>メンバー紹介</h2>
+  <p class="sub">スポーツコーチング・イニシアチブの活動は、競技・年代・バックグラウンドが異なる多彩なメンバーにより運営されています。多様性を尊重しながらも、スポーツの普遍的な価値観を共有し、活動に取り組んでいます。</p>
+  <div class="members">
+    <div class="mb"><div class="role">代表理事</div><div class="name">小林 忠広</div><div class="kana">こばやし・ただひろ</div><div class="sport">専門種目：ラグビー、ゴルフ</div></div>
+    <div class="mb"><div class="role">副代表理事</div><div class="name">石渡 圭輔</div><div class="kana">いしわた・けいすけ</div><div class="sport">専門種目：ラクロス</div></div>
+    <div class="mb"><div class="role">理事</div><div class="name">横田 直道</div><div class="kana">よこた・なおみち</div><div class="sport">専門種目：野球、サッカー</div></div>
+    <div class="mb"><div class="role">監事</div><div class="name">鳥實 裕弥</div><div class="kana">とりみ・ゆうや</div><div class="sport">専門種目：サッカー</div></div>
+    <div class="mb"><div class="role">事務局長</div><div class="name">小野 耕一</div><div class="kana">おの・こういち</div><div class="sport">専門種目：バスケットボール</div></div>
+    <div class="mb"><div class="role">プログラム開発</div><div class="name">青野 祥人</div><div class="kana">あおの・よしと</div><div class="sport">専門種目：ラグビー、サッカー</div></div>
+    <div class="mb"><div class="role">プログラム開発</div><div class="name">有田 祥太</div><div class="kana">ありた・しょうた</div><div class="sport">専門種目：陸上</div></div>
+    <div class="mb"><div class="role">コミュニケーション戦略</div><div class="name">後藤 晃一</div><div class="kana">ごとう・こういち</div><div class="sport">専門種目：サッカー</div></div>
+    <div class="mb"><div class="role">事業開発</div><div class="name">池田 菜美</div><div class="kana">いけだ・なみ</div><div class="sport">専門種目：－</div></div>
+    <div class="mb"><div class="role">事業開発</div><div class="name">木村 壮宏</div><div class="kana">きむら・たけひろ</div><div class="sport">専門種目：－</div></div>
+    <div class="mb"><div class="role">事業開発</div><div class="name">長田</div><div class="kana">おさだ</div><div class="sport">専門種目：－</div></div>
   </div>
 </div></section>
 
 <section class="bg-l"><div class="wrap">
-  <h2><span>OUR WAY</span>まなぶ・はなす・さがす</h2>
-  <p class="sub">私たちのワークショップは、3つのプロセスの循環で「自ら問いを立て、学び続ける人」を育てます。</p>
-  <div class="steps">
-    <div class="step"><b>1. まなぶ</b>理念と実践に触れ、体験を通じて「気づく」</div>
-    <div class="step"><b>2. はなす</b>立場や競技を越えて対話し、問いを深める</div>
-    <div class="step"><b>3. さがす</b>自ら問いを立て、現場で仮説検証を続ける</div>
+  <h2><span>MEDIA</span>発信・メディア</h2>
+  <p class="sub">現場のスポーツコーチにとって役立つ情報や、想いのある指導者へのインタビュー記事を発信しています。</p>
+  <div class="media">
+    <div class="md"><h3>コーチング・ステーション</h3><p>目から鱗の知恵袋。現場のスポーツコーチにとって役立つ情報や、想いのある指導者をピックアップしたインタビュー記事、ダブル・ゴールに関連した情報を発信しています。</p><a href="https://coaching-station.com/" target="_blank" rel="noopener">サイトを見る →</a></div>
+    <div class="md"><h3>YouTubeチャンネル</h3><p>スポーツコーチング・イニシアチブで展開する各種プログラム・コンテンツを動画で共有しています。</p><a href="https://www.youtube.com/channel/UCXJ96qUNCCxS8J7qhFJH5BA/featured" target="_blank" rel="noopener">チャンネルを見る →</a></div>
+    <div class="md"><h3>書籍のご案内</h3><p>『ダブル・ゴール・コーチングの持つパワー』——全米のユーススポーツのスタンダードを変革したコーチングメソッドのエッセンスが凝縮された一冊。『ダブル・ゴール・コーチ』（ジム・トンプソン著）の出版にも協力しています。</p><a href="https://sci.thebase.in/" target="_blank" rel="noopener">書籍を購入する →</a></div>
   </div>
 </div></section>
 
 <section id="news"><div class="wrap">
-  <h2><span>NEWS</span>ニュース &amp; Podcast</h2>
+  <h2><span>NEWS</span>お知らせ・活動報告</h2>
+  <p class="sub">最新の活動報告はnoteでも発信しています。</p>
   <ul class="news">
-    <li><time>2026.07</time><span>Podcast「スポーツコーチングの現在地」配信再開</span></li>
-    <li><time>2026.07</time><span>旭川市スポーツ指導者講習会に協力（7/25）</span></li>
-    <li><time>2026.06</time><span>スポーツコーチング・ラボ「井上ゆいこ氏（SCP Japan）」開催報告</span></li>
+    <li><time>2026.05.15</time><a href="https://note.com/sports_coaching/n/n0508a8e5a828" target="_blank" rel="noopener">「勝つ」ために、スコアボードを見ない。</a></li>
+    <li><time>2026.05.15</time><a href="https://note.com/sports_coaching/n/n8d7c695bd4ae" target="_blank" rel="noopener">「育てるがすべて」〜選手の未来に責任を持つ「システム」と「加熱と冷却」〜</a></li>
+    <li><time>2026.04.01</time><a href="https://note.com/sports_coaching/n/nb6b00ac81c3a" target="_blank" rel="noopener">読売ジャイアンツU15に学ぶ、選手が自ら動き出す「未来逆算型」の育成現場</a></li>
+    <li><time>2024.02.05</time><a href="https://note.com/sports_coaching/n/n0456dbbcde86" target="_blank" rel="noopener">みどりスポーツクラブわっかない主催 スポーツコーチ向けワークショップ開催！</a></li>
   </ul>
 </div></section>
 
 <footer id="contact"><div class="wrap">
-  <h2><span style="color:var(--peach)">CONTACT</span>お問い合わせ</h2>
-  <p>講演・研修のご依頼、地域展開のご相談、取材はこちらから。2営業日以内にご返信します。</p>
-  <div class="fform">
-    <input placeholder="お名前・ご所属">
-    <input placeholder="メールアドレス">
-    <textarea rows="4" placeholder="ご相談内容"></textarea>
-    <button>送信する（Slackに自動通知されます）</button>
+  <h2><span>CONTACT</span>お問い合わせ</h2>
+  <p>スポーツコーチング・イニシアチブの活動に関するお問い合わせ、案件のご依頼・ご相談は、以下の宛先までお寄せください。講演・研修のご依頼、地域展開のご相談、取材も歓迎いたします。</p>
+  <div class="contact-box">
+    <div class="label">活動に関するお問い合わせ</div>
+    <a href="mailto:admin@sports-coach.jp">admin@sports-coach.jp</a>
   </div>
-  <p class="copy">© 2026 特定非営利活動法人スポーツコーチング・イニシアチブ</p>
+  <div class="fsns">
+    <a href="https://www.facebook.com/sportscoachinginitiative/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://twitter.com/sci_sportscoach" target="_blank" rel="noopener">X (Twitter)</a>
+    <a href="https://www.instagram.com/sci_sports_coach/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/channel/UCXJ96qUNCCxS8J7qhFJH5BA/featured" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://note.com/sports_coaching" target="_blank" rel="noopener">note</a>
+  </div>
+  <p class="copy">© 2026 特定非営利活動法人 スポーツコーチング・イニシアチブ</p>
 </div></footer>
-<div class="mock">MOCKUP v1 — 7/28更新ワーク用</div>
+
+<div class="mock">MOCKUP v2 — 団体紹介資料2026年7月版 反映</div>
 </body></html>
