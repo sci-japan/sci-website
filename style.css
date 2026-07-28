@@ -228,3 +228,36 @@ a.card:hover,a.wcard:hover{border-color:var(--red);box-shadow:0 4px 14px rgba(0,
   .ctalist{grid-template-columns:1fr 1fr;}
   .scene{padding:26px 24px;}
 }
+
+/* lede (what we do, plain language) */
+.lede{background:#fff;border-left:4px solid var(--red);border-radius:0 8px 8px 0;padding:20px 22px;box-shadow:0 2px 10px rgba(0,0,0,.05);font-size:.98rem;line-height:1.9;}
+.lede b{color:var(--red);}
+
+/* program cards */
+.prog{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;}
+.alt .prog{background:#fff;}
+.prog .kind{display:inline-block;font-size:.65rem;font-weight:800;color:#fff;background:var(--red);border-radius:999px;padding:4px 11px;letter-spacing:.05em;}
+.prog h3{font-size:1.02rem;margin:10px 0 0;color:var(--dark);line-height:1.5;}
+.prog p{font-size:.86rem;color:var(--grey);margin-top:7px;}
+.prog .meta{font-size:.76rem;color:var(--grey);margin-top:11px;padding-top:9px;border-top:1px dashed var(--line);line-height:1.7;}
+
+/* question cards (audience entry points) */
+.qcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;display:block;text-decoration:none;color:inherit;transition:.15s;}
+.alt .qcard{background:#fff;}
+.qcard:hover{border-color:var(--red);box-shadow:0 4px 14px rgba(0,0,0,.07);}
+.qcard .aud{font-size:.68rem;font-weight:800;color:var(--red);letter-spacing:.08em;}
+.qcard h3{font-size:1.02rem;margin:6px 0 12px;color:var(--dark);line-height:1.6;}
+.qcard ul{list-style:none;}
+.qcard li{font-size:.85rem;color:var(--grey);padding-left:19px;position:relative;margin-bottom:5px;line-height:1.7;}
+.qcard li:before{content:"✓";position:absolute;left:0;top:0;color:var(--red);font-weight:800;font-size:.78rem;}
+.qcard .go{margin-top:13px;display:inline-block;color:var(--red);font-weight:700;font-size:.85rem;}
+
+/* compact idea block */
+.idea{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 20px;}
+.idea p{font-size:.92rem;color:var(--grey);}
+.idea p+p{margin-top:10px;}
+.idea .big2{font-size:1.05rem;font-weight:800;color:var(--dark);line-height:1.75;margin-bottom:10px;}
+
+@media(min-width:700px){
+  .lede{font-size:1.05rem;padding:24px 26px;}
+}
